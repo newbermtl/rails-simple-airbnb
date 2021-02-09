@@ -1,4 +1,23 @@
-<% @flats.each do |flat| %>
-<h1> <%= flat.name %> </h1>
-<p> <%= flat.price_per_night %> </p>
-<% end %>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1446144997/london-header-dg1015.jpg?itok=7tScDQ8t);">
+  <div class="container">
+    <h1><strong>WanAirBnb</strong></h1>
+    <p>Find a cozy place to stay on your next trip with us!</p>
+  </div>
+</div>
+  <div class="flats-header">
+  <h4> We have <%= @flats.length %> flats avaiable</h4>
+  <%= link_to "Add a flat", new_flat_path, class: "btn btn-gradient" %>
+  </div>
+<div class="container">
+  <div class="cards">
+    <% @flats.each do |flat| %>
+    <%= link_to flat_path(flat) do %>
+      <div  class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://fultonsite.files.wordpress.com/2014/03/1.jpg)">
+        <%= flat.name %>
+        (<%= flat.price_per_night%>$/night)
+      </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
