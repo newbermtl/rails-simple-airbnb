@@ -1,3 +1,12 @@
-<h2><%= @flat.name %></h2>
-<p> <%=@flat.address%> </p>
-<p> <%= @flat.description %></p>
+<%= link_to "Return to Home", flats_path %>
+<div class="container">
+  <h2><%= @flat.name %></h2>
+  <p>Price:<%= @flat.price_per_night %>$ per night.</p>
+  <p>Address: <%=@flat.address%> </p>
+  <p> Can accomadate <%= @flat.number_of_guests %> guests. </p>
+  <p>Description: <%= @flat.description %></p>
+
+  <%= link_to "Edit this flat", edit_flat_path %>
+  <%= link_to "Delete this flat", @flat, method: :delete, data: { confirm: "Are you sure you want to delete this flat"} %>
+
+</div>
