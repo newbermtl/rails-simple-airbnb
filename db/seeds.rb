@@ -15,6 +15,7 @@ Flat.create!(
   address: '10 Clifton Gardens London W9 1DT',
   description: 'A lovely summer feel for this spacious garden flat. Two double bedrooms, open plan living area, large kitchen and a beautiful conservatory',
   price_per_night: 75,
+  picture: "https://source.unsplash.com/featured/?house",
   number_of_guests: 3
 )
 
@@ -25,6 +26,7 @@ Flat.create!(
   address: '666 Dark Alley Road Vladivostok W9 1DT',
   description: 'Ewwwww, not nice',
   price_per_night: 10,
+  picture: "https://source.unsplash.com/featured/?house",
   number_of_guests: 2
 )
 
@@ -36,6 +38,7 @@ Flat.create!(
   address: 'Somewhere under the Atlantic, London W9 1DT',
   description: 'Underwater cave, make sure to bring your own oxygen tanks',
   price_per_night: 175,
+  picture: "https://source.unsplash.com/featured/?house",
   number_of_guests: 30
 )
 
@@ -47,6 +50,7 @@ Flat.create!(
   address: '10 Sherbrooke street Montreal W9 1DT',
   description: 'Its shaped like a toilet bowl, who could have thought this was a good idea...',
   price_per_night: 75_000,
+  picture: "https://source.unsplash.com/featured/?house",
   number_of_guests: 30_000
 )
 
